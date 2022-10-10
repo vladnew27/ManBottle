@@ -4,7 +4,9 @@ public abstract class Controller {
     private String[] request;
     private String[] response;
 
-    public          (String[] request, String[] response )
+    public void doControl(String[] request, String[] response) {
+
+    }
 
 
 }

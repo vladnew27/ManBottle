@@ -2,6 +2,7 @@ package com.company.navatski.model.mammal;
 
 public abstract class Mammal implements Drinking {
     private String name;
+    private double stomachVolume;
 
     public double getStomachVolume() {
         return stomachVolume;
@@ -10,8 +11,6 @@ public abstract class Mammal implements Drinking {
     public void setStomachVolume(double stomachVolume) {
         this.stomachVolume = stomachVolume;
     }
-
-    private double stomachVolume;
 
     public String getName() {
         return name;
