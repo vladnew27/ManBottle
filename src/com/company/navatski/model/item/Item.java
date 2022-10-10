@@ -1,19 +1,18 @@
 package com.company.navatski.model.item;
 
-public abstract class Item {
-    private String type;
-    private double radius;
-    private double height;
+public abstract class Item implements Drinkable {
 
-    public Item(String type) {
-        this.type = type;
+    private double volume;
+
+    public Item(double volume) {
+        this.volume = volume;
     }
 
-    public String getType() {
-        return type;
+    public double getVolume() {
+        return volume;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setVolume(double volume) {
+        this.volume = volume;
     }
 }

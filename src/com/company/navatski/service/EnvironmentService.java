@@ -1,19 +1,22 @@
 package com.company.navatski.service;
 
 import com.company.navatski.model.environmrnt.Environment;
-import com.company.navatski.model.item.Item;
-import com.company.navatski.model.mammal.Mammal;
+import com.company.navatski.model.environmrnt.EnvironmentSingleton;
 import com.google.gson.Gson;
 
 public class EnvironmentService {
-    Mammal mammal;
-    Item item;
+    Environment environment;
 
-    public static String doSimulation(){
-        mammal.drinkFrom(item);
-        return "";//todo
+    public EnvironmentService() {
+        this.environment = EnvironmentSingleton.getInstance();
     }
-    public static String getStatus(Environment environment) {
+
+    public String doSimulation() {
+        environment.getMammal().drink(environment.getItem());
+        return "Simulation done";
+    }
+
+    public String getStatus() {
         return new Gson().toJson(environment);
     }
 }

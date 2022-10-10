@@ -6,22 +6,22 @@ import com.company.navatski.model.mammal.Mammal;
 
 public abstract class Environment {
 
-    private static Mammal mammal;
-    private static Item item;
+    private Mammal mammal;
+    private Item item;
 
-    public static Mammal getMammal() {
+    public Mammal getMammal() {
         return mammal;
     }
 
-    public static void setMammal(Mammal mammal) {
-        Environment.mammal = mammal;
+    public void setMammal(Mammal mammal) {
+        this.mammal = mammal;
     }
 
-    public static Item getItem() {
+    public Item getItem() {
         return item;
     }
 
-    public static void setItem(Item item) {
-        Environment.item = item;
+    public void setItem(Item item) {
+        this.item = item;
     }
 }

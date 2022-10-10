@@ -1,7 +1,9 @@
-MVP:
+MVP_0,5:
     man, cat
    bottle, bowl, glass
 
+MVP:
+    multilingual
 
 release 2.0:
     pattern command

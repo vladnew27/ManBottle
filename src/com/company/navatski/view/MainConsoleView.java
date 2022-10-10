@@ -29,7 +29,7 @@ public class MainConsoleView {
           if (!InputValidator.validate(input)) {
               System.out.println(INVALID_INPUT);
           }else{
-
+                //todo logic if valid input
           }
 
         }
