@@ -1,4 +1,4 @@
 package com.company.navatski.service;
 
-public class DishService {
+public class ItemFactory {
 }

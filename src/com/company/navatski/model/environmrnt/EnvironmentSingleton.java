@@ -1,11 +1,5 @@
 package com.company.navatski.model.environmrnt;
 
-import com.company.navatski.model.Action;
-import com.company.navatski.model.Item;
-import com.company.navatski.model.man.Man;
-
-import java.util.Map;
-
 public final class EnvironmentSingleton extends Environment {
     private static volatile EnvironmentSingleton instance;
 

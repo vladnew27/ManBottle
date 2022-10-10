@@ -1,16 +1,27 @@
 package com.company.navatski.model.environmrnt;
 
-import com.company.navatski.model.Action;
-import com.company.navatski.model.Item;
-import com.company.navatski.model.man.Man;
-import java.util.Map;
+import com.company.navatski.model.item.Item;
+import com.company.navatski.model.mammal.Mammal;
+
 
 public abstract class Environment {
 
-    private static Man man;
-    private static Map<String ,Action> actionMap;
-    private static Map<String, Item> itemMap;
+    private static Mammal mammal;
+    private static Item item;
 
+    public static Mammal getMammal() {
+        return mammal;
+    }
 
+    public static void setMammal(Mammal mammal) {
+        Environment.mammal = mammal;
+    }
 
+    public static Item getItem() {
+        return item;
+    }
+
+    public static void setItem(Item item) {
+        Environment.item = item;
+    }
 }

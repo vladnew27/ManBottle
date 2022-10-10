@@ -4,6 +4,7 @@ MVP:
 
 
 release 2.0:
+    pattern command
     abstract factory Dish
         + material (plastic, glass)
     body parts

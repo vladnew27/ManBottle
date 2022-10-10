@@ -10,22 +10,30 @@ public class MainConsoleView {
 
     private static final String EXIT = "EXIT";
     private static final String GOOD_BYE = "Good Bye!";
-    private static String input;
+    private static final String INVALID_INPUT = "invalid input";
+    private static String[] input;
 
     public static void show(Environment environment) {
 
-        System.out.println(WelcomePageGenerator.getWelcomePage());
-        System.out.println(WelcomePageGenerator.getWelcomePage());
+        System.out.println(TextGenerator.getWelcomeText());
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        try {
-            input = reader.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        while (!input.equalsIgnoreCase(EXIT)) {
+
+        do {
+            System.out.println(TextGenerator.askInputText());
+            try {
+                input = reader.readLine().toUpperCase().split("\\s+");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            // validate
+          if (!InputValidator.validate(input)) {
+              System.out.println(INVALID_INPUT);
+          }else{
+
+          }
 
         }
-        ;
+        while (!input[0].equalsIgnoreCase(EXIT));
 
         System.out.println(GOOD_BYE);
 

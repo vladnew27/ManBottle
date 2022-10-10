@@ -1,6 +1,6 @@
-package com.company.navatski.model.dish;
+package com.company.navatski.model.item;
 
-public class Bottle {
+public class Bottle extends Item{
     /*
      характеристики
     размеры
