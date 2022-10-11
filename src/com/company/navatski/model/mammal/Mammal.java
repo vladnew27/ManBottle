@@ -1,5 +1,7 @@
 package com.company.navatski.model.mammal;
 
+import com.company.navatski.model.item.Drinkable;
+
 public abstract class Mammal implements Drinking {
     private String name;
     private double stomachVolume;
@@ -8,6 +10,9 @@ public abstract class Mammal implements Drinking {
         System.out.println("Mammal no-args constructor invoked");
     }
 
+    public void drink(Drinkable drinkable) {
+        System.out.println(this.getName() + drinkDef(drinkable));
+    }
     public double getStomachVolume() {
         return stomachVolume;
     }
