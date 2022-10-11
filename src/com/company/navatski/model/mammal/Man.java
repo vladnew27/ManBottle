@@ -7,6 +7,6 @@ public class Man extends Mammal implements Drinking{
 
     @Override
     public void drink(Drinkable drinkable) {
-        System.out.println(this.getName() + " drinking from "+ drinkable.getClass().getName());
+        System.out.println(this.getName() + " drinking from "+ drinkable.getClass().getSimpleName());
     }
 }

@@ -6,6 +6,6 @@ public class Cat extends Mammal implements Drinking{
 
     @Override
     public void drink(Drinkable drinkable) {
-        System.out.println(this.getName() + " lapping up from "+ drinkable.getClass().getName()); // коты не пьют, а лакают:)
+        System.out.println(this.getName() + " lapping up from "+ drinkable.getClass().getSimpleName()); // коты не пьют, а лакают:)
     }
 }
