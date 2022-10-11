@@ -4,6 +4,10 @@ public abstract class Mammal implements Drinking {
     private String name;
     private double stomachVolume;
 
+    public Mammal() {
+        System.out.println("Mammal no-args constructor invoked");
+    }
+
     public double getStomachVolume() {
         return stomachVolume;
     }
@@ -18,5 +22,13 @@ public abstract class Mammal implements Drinking {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return  this.getClass().getSimpleName()  + " {" +
+                "name='" + name + '\'' +
+                ", stomachVolume=" + stomachVolume +
+                '}';
     }
 }

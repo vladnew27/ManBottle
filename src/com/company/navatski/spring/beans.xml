@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean id = "man" class="com.company.navatski.model.mammal.Man">
+    <property name="name" value="Bob"/>
+    <property name="stomachVolume" value="1000.0"/>
+</bean>
+    <bean id = "man2" class="com.company.navatski.model.mammal.Man">
+        <property name="name" value="Amy"/>
+        <property name="stomachVolume" value="800.0"/>
+    </bean>
+
+
+
+    <bean id = "cat" class="com.company.navatski.model.mammal.Cat">
+        <property name="name" value="Barsik"/>
+        <property name="stomachVolume" value="200.0"/>
+    </bean>
+
+    <bean id = "glass" class="com.company.navatski.model.item.Glass">
+        <constructor-arg name="volume" value="300.0"/>
+    </bean>
+
+    <bean id = "bottle" class="com.company.navatski.model.item.Bottle">
+
+    </bean>
+
+
+</beans>
