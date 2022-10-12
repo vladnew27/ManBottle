@@ -1,9 +1,10 @@
 package com.company.navatski.model.mammal;
 
-import com.company.navatski.model.item.Drinkable;
-
 public class Cat extends Mammal implements Drinking ,Petable{
-//    @Override
+    public Cat(String name, double stomachVolume) {
+        super(name, stomachVolume);
+    }
+    //    @Override
 //    public void drink(Drinkable drinkable) {
 //        System.out.println(this.getName() + " lapping up from "+ drinkable.getClass().getSimpleName()); // коты не пьют, а лакают:)
 //    }

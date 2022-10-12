@@ -1,16 +1,18 @@
 package com.company.navatski.model.mammal;
 
-public class Man extends Mammal implements Drinking {
+import lombok.Getter;
+import lombok.Setter;
 
+public class Man extends Mammal implements Drinking {
+    @Setter
+    @Getter
     private Petable pet;
 
-    public Petable getPet() {
-        return pet;
-    }
-
-    public void setPet(Petable pet) {
+    public Man(String name, double stomachVolume, Petable pet) {
+        super(name, stomachVolume);
         this.pet = pet;
     }
+
 
     @Override
     public String getAction() {
