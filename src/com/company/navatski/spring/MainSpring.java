@@ -8,8 +8,6 @@ import com.company.navatski.model.mammal.Man;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.util.Arrays;
-
 public class MainSpring {
 
     public static void main(String[] args) {

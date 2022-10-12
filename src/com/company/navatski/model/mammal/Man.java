@@ -1,8 +1,10 @@
 package com.company.navatski.model.mammal;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@NoArgsConstructor
 public class Man extends Mammal implements Drinking {
     @Setter
     @Getter

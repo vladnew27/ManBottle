@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="man" class="com.company.navatski.model.mammal.Man">
+    <bean id="man" class="com.company.navatski.model.mammal.Man" autowire="byType">
         <property name="name" value="Bob"/>
         <property name="stomachVolume" value="1000.0"/>
     </bean>

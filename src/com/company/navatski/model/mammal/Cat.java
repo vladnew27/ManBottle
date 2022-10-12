@@ -1,5 +1,8 @@
 package com.company.navatski.model.mammal;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class Cat extends Mammal implements Drinking ,Petable{
     public Cat(String name, double stomachVolume) {
         super(name, stomachVolume);
