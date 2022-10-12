@@ -1,16 +1,26 @@
 package com.company.navatski.model.mammal;
 
-import com.company.navatski.model.item.Drinkable;
+public class Man extends Mammal implements Drinking {
 
-public class Man extends Mammal implements Drinking{
+    private Petable pet;
 
-//    @Override
-//    public void drink(Drinkable drinkable) {
-//        System.out.println(this.getName() + " drinking from "+ drinkable.getClass().getSimpleName());
-//    }
+    public Petable getPet() {
+        return pet;
+    }
+
+    public void setPet(Petable pet) {
+        this.pet = pet;
+    }
 
     @Override
     public String getAction() {
         return " drinking from ";
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                " pet=" + pet +
+                '}';
     }
 }

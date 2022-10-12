@@ -14,12 +14,12 @@ public class MainSpring {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("com/company/navatski/spring/beans.xml");
-//        Mammal mammal = context.getBean("man", Man.class);
-//        System.out.println(mammal.toString());
-//        mammal = context.getBean("man2", Man.class);
-//        System.out.println(mammal.toString());
-//        mammal = context.getBean("cat", Cat.class);
-//        System.out.println(mammal.toString());
+        Mammal mammal = context.getBean("man", Man.class);
+        System.out.println(mammal.toString());
+        mammal = context.getBean("man2", Man.class);
+        System.out.println(mammal.toString());
+        mammal = context.getBean("cat", Cat.class);
+        System.out.println(mammal.toString());
         Item item = context.getBean("glass", Glass.class);
         System.out.println(item.toString());
 

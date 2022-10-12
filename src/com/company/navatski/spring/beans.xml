@@ -9,14 +9,18 @@
         <property name="name" value="Bob"/>
         <property name="stomachVolume" value="1000.0"/>
     </bean>
-    <bean id="man2" class="com.company.navatski.model.mammal.Man">
-        <property name="name" value="Amy"/>
-        <property name="stomachVolume" value="800.0"/>
-    </bean>
+
     <bean id="cat" class="com.company.navatski.model.mammal.Cat">
         <property name="name" value="Barsik"/>
         <property name="stomachVolume" value="200.0"/>
     </bean>
+
+    <bean id="man2" class="com.company.navatski.model.mammal.Man">
+        <property name="name" value="Amy"/>
+        <property name="stomachVolume" value="800.0"/>
+        <property name="pet" ref="cat"/>
+    </bean>
+
     <bean id="glass" class="com.company.navatski.model.item.Glass">
         <constructor-arg name="volume" value="300.0"/>
     </bean>
