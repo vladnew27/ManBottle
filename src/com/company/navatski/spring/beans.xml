@@ -10,12 +10,13 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
     ">
     <context:annotation-config />
+    <context:property-placeholder location="classpath:human-info.properties"/>
     <!-- bean definitions here -->
 
 
     <bean id="man" class="com.company.navatski.model.mammal.Man">
         <property name="name" value="Bob"/>
-        <property name="stomachVolume" value="1000.0"/>
+<!--        <property name="stomachVolume" value="${man.stomachVolume}"/>-->
     </bean>
 
     <bean id="cat" class="com.company.navatski.model.mammal.Cat">
@@ -30,7 +31,7 @@
 
     <bean id="man2" class="com.company.navatski.model.mammal.Man">
         <property name="name" value="Amy"/>
-        <property name="stomachVolume" value="800.0"/>
+        <property name="stomachVolume" value="${woman.stomachVolume}"/>
         <property name="pet" ref="cat"/>
     </bean>
 

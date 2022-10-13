@@ -5,8 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-
-import java.lang.reflect.Type;
+import org.springframework.beans.factory.annotation.Value;
 
 @NoArgsConstructor
 public class Man extends Mammal implements Drinking {
@@ -22,6 +21,11 @@ public class Man extends Mammal implements Drinking {
         this.pet = pet;
     }
 
+    @Value("${man.stomachVolume}")
+    @Override
+    public void setStomachVolume(double stomachVolume) {
+         super.setStomachVolume( stomachVolume);
+    }
 
     @Override
     public String getAction() {

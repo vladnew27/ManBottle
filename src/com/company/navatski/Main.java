@@ -7,10 +7,10 @@ import com.company.navatski.view.MainConsoleView;
 public class Main {
 
     public static void main(String[] args) {
-        if (args.length != 0 ){
+        if (args.length != 0) {
             new Emulation().doEmulation();
         }
-        EnvironmentSingleton environment =  EnvironmentSingleton.getInstance();
+        EnvironmentSingleton environment = EnvironmentSingleton.getInstance();
         MainConsoleView.show(environment);
     }
 }

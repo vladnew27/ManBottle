@@ -2,6 +2,7 @@ package com.company.navatski.model.mammal;
 
 import com.company.navatski.model.item.Drinkable;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Required;
 
 @AllArgsConstructor
 public abstract class Mammal implements Drinking {
@@ -34,7 +35,7 @@ public abstract class Mammal implements Drinking {
 
     @Override
     public String toString() {
-        return  this.getClass().getSimpleName()  + " {" +
+        return this.getClass().getSimpleName() + " {" +
                 "name='" + name + '\'' +
                 ", stomachVolume=" + stomachVolume +
                 '}';
