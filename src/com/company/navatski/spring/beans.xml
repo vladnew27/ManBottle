@@ -9,6 +9,7 @@
     http://www.springframework.org/schema/aop
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
     ">
+    <context:component-scan base-package="com.company.navatski"/>
     <context:annotation-config />
     <context:property-placeholder location="classpath:human-info.properties"/>
     <!-- bean definitions here -->
@@ -35,9 +36,6 @@
         <property name="pet" ref="cat"/>
     </bean>
 
-    <bean id="glass" class="com.company.navatski.model.item.Glass">
-        <constructor-arg name="volume" value="300.0"/>
-    </bean>
-    <bean id="bottle" class="com.company.navatski.model.item.Bottle">
-    </bean>
+
+
 </beans>

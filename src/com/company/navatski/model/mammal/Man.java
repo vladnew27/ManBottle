@@ -12,8 +12,8 @@ public class Man extends Mammal implements Drinking {
 
     @Setter
     @Getter
-    @Autowired
-    @Qualifier("cat2")
+    // @Autowired
+  //  @Qualifier("cat2")
     private Petable pet;
 
     public Man(String name, double stomachVolume, Petable pet) {
@@ -21,10 +21,10 @@ public class Man extends Mammal implements Drinking {
         this.pet = pet;
     }
 
-    @Value("${man.stomachVolume}")
+  //  @Value("${man.stomachVolume}")
     @Override
     public void setStomachVolume(double stomachVolume) {
-         super.setStomachVolume( stomachVolume);
+        super.setStomachVolume(stomachVolume);
     }
 
     @Override

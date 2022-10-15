@@ -10,7 +10,7 @@ public abstract class Mammal implements Drinking {
     private double stomachVolume;
 
     public Mammal() {
-        System.out.println("Mammal no-args constructor invoked");
+       // System.out.println("Mammal no-args constructor invoked");
     }
 
     public void drink(Drinkable drinkable) {

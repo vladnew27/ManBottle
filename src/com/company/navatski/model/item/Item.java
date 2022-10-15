@@ -5,11 +5,11 @@ public abstract class Item implements Drinkable {
     private double volume;
     public Item( ) {
 
-        System.out.println("Item no-args constructor invoked");
+       // System.out.println("Item no-args constructor invoked");
     }
     public Item(double volume) {
         this.volume = volume;
-        System.out.println("Item constructor invoked");
+      //  System.out.println("Item constructor invoked");
     }
 
     public double getVolume() {
