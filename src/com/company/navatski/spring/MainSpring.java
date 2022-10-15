@@ -17,8 +17,7 @@ public class MainSpring {
     private static final Logger logger = LogManager.getLogger(MainSpring.class);
 
     public static void main(String[] args) {
-        // ApplicationContext context = new ClassPathXmlApplicationContext("com/company/navatski/spring/beans.xml");
-        ApplicationContext context = new AnnotationConfigApplicationContext(ManBottleConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ManBottleConfig.class);
         Mammal mammal = context.getBean("man", Man.class);
         // System.out.println(mammal.toString());
         logger.info(mammal.toString());
@@ -30,5 +29,6 @@ public class MainSpring {
         logger.info(item.toString());
         context.getBeansOfType(null).forEach((k, v) -> logger.info(k));
         context.getBeansOfType(Mammal.class).forEach((k, v) -> v.drink(item));
+        context.close();
     }
 }
